@@ -1,0 +1,213 @@
+
+* {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    appearance: none;
+}
+
+img {
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    scrollbar-gutter: stable both-edges;
+    display: inline-flex;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.right-column {
+    margin-top: 34px;
+    margin-right: 27px;
+    margin-left: 21px;
+    width: 26%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mustard-logo {
+    top: 23px;
+    left: 25px;
+    position: absolute;
+}
+
+.profile {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    width: 168px;
+    height: 294px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 212px;
+}
+
+.profile-ava {
+    width: 168px;
+    height: 168px;
+    background-image: url('../shared/images/Rectangle277.png');
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: cover;
+    border: 7px solid #FFFFFF;
+    border-radius: 50%;
+
+    margin-bottom: 16px;
+}
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 16px;
+}
+
+.profile-nick {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.profile-button {
+    display: flex;
+}
+
+.profile-follow {
+    width: 93px;
+    height: 48px;
+    background: #FF7A00;
+    border-radius: 62px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px 8px;
+}
+.profile-share {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 62px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0px 8px;
+}
+
+.opacity-6 {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    position: absolute;
+    border-radius: 0px 0px 61.3547px 61.3547px;
+}
+
+.left-column {
+    margin-left: 34px;
+    width: 73%;
+    /* width: 719px; */
+    /* max-width: 1000px; */
+    height: 719px;
+    background-image: url('../shared/images/junior-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: cover;
+    border-radius: 0px 0px 61.3547px 61.3547px;
+    display: inline-block;
+}
+
+.About-block {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.About-title {
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.About-body {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.Contact-block {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Contact-title {
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+}
+
+.Contact-body {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.Contact-info {
+    background-color: #FFEED7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px auto;
+    border-radius: 50px;
+}
+
+.See-contact-info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    color: #EB6C24;
+}

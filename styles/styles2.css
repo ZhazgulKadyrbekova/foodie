@@ -1,0 +1,280 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    appearance: none;
+}
+
+img {
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    max-width: 600px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    scrollbar-gutter: stable both-edges;
+    background: #F9F4E9
+}
+
+main {
+    margin: 31px 16px 0;
+
+}
+
+.background {
+    width: 100%;
+    height: 100vw;
+    background-image:   linear-gradient(360deg, rgba(0, 0, 0, 0.8) 26.11%, rgba(0, 0, 0, 0) 100%),
+                        linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 24.42%),
+                        url('https://s3.amazonaws.com/dev.mustard.love.user.avatar/upload_0f84c972fd754eb8af4f3bdd04476ca2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 32px 32px;
+    display: inline-block;
+}
+
+.mustard-logo {
+    top: 16px;
+    left: 16px;
+    position: absolute;
+}
+
+.profile {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+
+    /* height: calc(100% - 16px); */
+    height: 48px;
+    margin: auto 16px 16px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.profile-ava {
+    width: 48px;
+    height: 48px;
+    background-image: url('../shared/images/Rectangle277.png');
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+
+    margin-bottom: 16px;
+}
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100px;
+    margin-bottom: 16px;
+    margin-left: 8px;
+}
+
+.profile-nick {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.profile-follow {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    width: 92px;
+    height: 48px;
+    background: #FF7A00;
+    border-radius: 62px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 43px;
+}
+.profile-share {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 62px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 8px;
+}
+
+.About-block {
+    padding: 32px 16px 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.About-description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-bottom: 16px;
+}
+
+.Contact-body {
+    display: flex;
+    margin: 12px 0px;
+    width: 245px;
+}
+
+.Contact-info {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #77797B;
+
+    background-color: #FFEED7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 12px 0 0;
+    border-radius: 50px;
+    padding: 0px 12px 0px 0px;
+}
+
+.See-contact-info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    display: flex;
+    letter-spacing: 0.2px;
+    color: #EB6C24;
+}
+
+.category-list {
+    width: 100%;
+    margin: 23px 0;
+    overflow: auto;
+    white-space: nowrap;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+.category {
+    margin-right: 16px;
+    color: #77797B;
+}
+.current-category {
+    font-weight: 700;
+    color: #000000;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+
+.feed {
+    display: flex;
+    width: 100%;
+}
+
+.left-column {
+    margin-right: 6px;
+    width: calc(50% - 6px);
+    display: flex;
+    flex-direction: column;
+}
+
+.right-column {
+    margin-left: 6px;
+    width: calc(50% - 6px);
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column .venue {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 262px;
+    margin-bottom: 12px;
+}
+
+.right-column .venue {
+    width: 100%;
+    min-height: 113px;
+    margin-bottom: 12px;
+}
+
+.venue-cover {
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    position: absolute;
+}
+
+.venue-info {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    position: absolute;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    /* letter-spacing: 0.2px; */
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin: 0 12px 12px 12px;
+}
+
+.venue-name {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+}
