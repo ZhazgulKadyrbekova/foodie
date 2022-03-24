@@ -232,29 +232,13 @@ a {
     flex-direction: column;
 }
 
-.left-column .venue {
-    max-width: 100%;
-    max-height: 100%;
-    min-height: 262px;
-    margin-bottom: 12px;
-}
-
-.right-column .venue {
-    width: 100%;
-    min-height: 113px;
+.venue {
     margin-bottom: 12px;
 }
 
 .venue-cover {
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    background-size: cover;
-    background-position: center;
-
-    width: 100%;
-    height: 100%;
     border-radius: 12px;
-    position: absolute;
+    width: 100%;
 }
 
 .venue-info {
@@ -282,9 +266,9 @@ a {
 .popup {
     width: 100%;
     height: 100%;
-    /* background: blue; */
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    z-index: 10;
 }
 
 .background {
@@ -300,15 +284,85 @@ a {
     background: #F9F4E9;
     position: absolute;
     bottom: 0;
-    border-radius: 15px;
+    border-radius: 12px 12px 0px 0px;
 }
 
 .popup-head {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid #D2D2D3;
     display: flex;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .popup-close {
     position: absolute;
     right: 0;
+    margin: 16px;
+}
+
+.popup-body {
+    margin: 16px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #77797B;
+}
+
+.popup-elem {
+    margin-top: 24px;
+    display: flex;
+}
+
+.popup-elem-text {
+    margin-left: 16px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #1F3FFF;
+}
+
+.popup-mustard {
+    width: 100%;
+    height: 574px;
+    background: #F9F4E9;
+    position: absolute;
+    bottom: 0;
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #1D2023;
+}
+
+.popup-mustard-logo {
+    margin: 40px;
+}
+
+.popup-mustard-app-store {
+    margin-top: 48px;
+    margin-bottom: 8px;
 }
