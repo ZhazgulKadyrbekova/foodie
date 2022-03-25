@@ -6,6 +6,7 @@
           content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <link rel='preload' href='./styles/styles2.css' as='style'>
+    <script src='./scripts/scripts.js'></script>
     <link rel='preconnect' href='https://fonts.googleapis.com'>
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap'>
@@ -25,7 +26,7 @@
                 <p class="profile-nick">@JohnDoe</p>
                 <p class="profile-location">Los Angeles, US</p>
             </div>
-            <div class="profile-follow">Follow</div>
+            <div class="profile-follow" onclick="setDisplay('block','popup-mustard')">Follow</div>
             <div class="profile-share">
                 <img src="./shared/icons/Frame11161.png">
             </div>
@@ -47,7 +48,7 @@
                 <p>Elite</p>
             </div>
         </div>
-        <div class='See-contact-info'>
+        <div class='See-contact-info' onclick="setDisplay('block','popup-contact')">
             See contact info
         </div>
     </div>
@@ -81,6 +82,32 @@
                     <p class="venue-name">Brass Bear Brewin...</p>
                     <p class="venue-location">LA • Glendale</p>
                 </div>
+                <img src='./shared/images/proxyclick-visitor-management-system-eHoCOI9mbNc-unsplash.png' class="venue-cover">
+                <div class="venue-background"></div>
+            </div>
+            <div class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                </div>
+                <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                <div class="venue-background"></div>
+            </div>
+            <div class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                
+                </div>
+                <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                <div class="venue-background"></div>
+            </div>
+            <div class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                
+                </div>
                 <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
                 <div class="venue-background"></div>
             </div>
@@ -99,7 +126,23 @@
                     <p class="venue-name">Brass Bear Brewin...</p>
                     <p class="venue-location">LA • Glendale</p>
                 </div>
-                <img src='./shared/images/proxyclick-visitor-management-system-eHoCOI9mbNc-unsplash.png' class="venue-cover">
+                <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                <div class="venue-background"></div>
+            </div>
+            <div class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                </div>
+                <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                <div class="venue-background"></div>
+            </div>
+            <div class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                </div>
+                <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
                 <div class="venue-background"></div>
             </div>
             <div class="venue">
@@ -115,13 +158,23 @@
     </div>
 </main>
 
+<div id="popup-profile">
+    <div class="profile-ava">
+    </div>
+    <div class="popup-profile-name">
+    </div>
+    <div class="profile-follow" onclick="setDisplay('block','popup-mustard')">Follow</div>
+    <div class="profile-share">
+        <img src="./shared/icons/Frame11161.png">
+    </div>
+</div>
 
-<div class="popup" style="display: none;">
-    <div class="background"></div>
+<div class="popup" style="display: none;" id="popup-contact">
+    <div class="background" onclick="setDisplay('none','popup-contact')"></div>
     <div class="popup-contact">
         <div class="popup-head">
             <p>Contact info</p>
-            <img src="./shared/icons/Group578.png" class="popup-close">
+            <img src="./shared/icons/Group578.png" class="popup-close" onclick="setDisplay('none','popup-contact')">
         </div>
         <div class="popup-body">
             <p>Use contact information for collaboration with foodies</p>
@@ -137,16 +190,15 @@
     </div>
 </div>
 
-<div class="popup" style="display: none;">
-    <div class="background"></div>
+<div class="popup" style="display: none;" id="popup-mustard">
+    <div class="background" onclick="setDisplay('none','popup-mustard')"></div>
     <div class="popup-mustard">
-        <img src="./shared/icons/Group578.png" class="popup-close">
+        <img src="./shared/icons/Group578.png" class="popup-close" onclick="setDisplay('none','popup-mustard')">
         <img src="./shared/icons/Downloadapp.png" class="popup-mustard-logo">
         <p>Your next bite is few taps away with Mustard app.</p>
         <a href="#" class="popup-mustard-app-store"><img src="./shared/icons/image59.png"></a>
         <img src="./shared/images/Illustration.png" width="100%">
     </div>
 </div>
-
 </body>
 </html>
