@@ -148,7 +148,8 @@ main {
 .Contact-body {
     display: flex;
     margin: 12px 0px;
-    width: 245px;
+    width: 100%;
+    overflow: auto;
 }
 
 .Contact-info {
