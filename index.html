@@ -14,51 +14,173 @@
     <title>Menu</title>
 </head>
 <body>
-<div class='left-column'>
-    <div class="opacity-6"></div>
-    <img src="./shared/icons/Frame10813.png" class="mustard-logo">
-    <div class="profile">
-        <div class="profile-ava">
-            <!-- <div  src="./shared/images/Rectangle277.png"></div> -->
+
+<header>
+    <div class="ava-contact">
+        <div class="ava">
+            <img class="mustard-logo" src="./shared/icons/Frame10813.png">
+            <img class="profile-ava" src="./shared/images/Rectangle277.png">
         </div>
-        <div class="profile-name">
-            <p class="profile-nick">@JohnDoe</p>
-            <p class="profile-location">Los Angeles, US</p>
-        </div>
-        <div class="profile-button">
-            <div class="profile-follow">Follow</div>
-            <div class="profile-share">
-                <img src="./shared/icons/Frame11161.png">
-            </div>
+        <div class='see-contact-info'>
+            See contact info
         </div>
     </div>
-</div>
-<div class='right-column'>
-    <div class='About-block'>
-        <span class="About-title">About</span>
-        <p class="About-body">Food bloger. Searching new cool places for you. Pizza lover.</p>
-    </div>
-    <div class='Contact-block'>
-        <span class='Contact-title'>Contact</span>
-        <div class='Contact-body'>
-            <div class='Contact-info'>
-                <img src='./shared/icons/icon-insta.png' width='40' height='40' alt='insta-icon'/>
-                <p>93.4K</p>
+    <div class="name-about-social">
+        <div class="name-about-follow">
+            <div class="name-about">
+                <p class="name">@JohnDoe</p>
+                <p class="location">Los Angeles, US</p>
+                <p class="description">Food bloger. Searching new cool places for you. Pizza lover.</p>
             </div>
-            <div class='Contact-info'>
-                <img src='./shared/icons/icon-tiktok.png' width='40' height='40' alt='insta-tiktok'/>
-                <p>1.5K</p>
-            </div>
-            <div class='Contact-info'>
-                <img src='./shared/icons/icon-elite.png' width='40' height='40' alt='insta-elite'/>
-                <p>Elite</p>
+            <div class="follow-buttons">
+                <div class="follow">Follow</div>
+                <div class="share">
+                    <img src="./shared/icons/Group.png" class="share-icon">
+                </div>
             </div>
         </div>
+        <div class="social">
+            <a href="#" class='social-info'>
+                <img src='./shared/icons/icon-insta.png' width='28' height='28' alt='insta-icon'/>
+                <p style="margin-left: 4px;">93.4K</p>
+            </a>
+            <a href="#" class='social-info'>
+                <img src='./shared/icons/icon-tiktok.png' width='28' height='28' alt='tiktok-icon'/>
+                <p style="margin-left: 4px;">1.5K</p>
+            </a>
+            <a href="#" class='social-info'>
+                <img src='./shared/icons/icon-elite.png' width='28' height='28' alt='elite-icon'/>
+                <p style="margin-left: 4px;">Elite</p>
+            </a>
+            <a href="#" class='social-info'>
+                <img src='./shared/icons/facebook.png' width='28' height='28' alt='facebook-icon'/>
+                <p style="margin-left: 4px;">1.5M</p>
+            </a>
+            <a href="#" class='social-info'>
+                <img src='./shared/icons/youtube.png' width='28' height='28' alt='youtube-icon'/>
+                <p style="margin-left: 4px;">1.5M</p>
+            </a>
+        </div>
     </div>
-    <div class='See-contact-info'>
-        See contact info
+</header>
+
+<main>
+    <div class='left-column'>
+        <div class="popular-recent">
+            <label for="Popular">
+                <input type="radio" id="Popular" name="menu" checked="">
+                <div class="custom-radio"></div>
+                <div class="selected type-text">
+                    Popular
+                </div>
+            </label>
+            <label for="Recent">
+                <input type="radio" id="Recent" name="menu">
+                <div class="custom-radio"></div>
+                <div class="type-text">
+                    Recent
+                </div>
+            </label>
+        </div>
+        <div class="categories">
+            <p class="current-category category">All Categories</p>
+            <p class="category">Pizza</p>
+            <p class="category">Piece of the pie</p>
+            <p class="category">Appetizers</p>
+            <p class="category">Salads</p>
+            <p class="category">Vegetables</p>
+            <p class="category">Pasta</p>
+            <p class="category">Vegetables</p>
+            <p class="category">Boards</p>
+            <p class="category">Entrees</p>
+            <p class="category">Dessert</p>
+            <p class="category">Gelato</p>
+            <p class="category">Organic teas</p>
+        </div>
     </div>
-</div>
+    <div class='right-column'>
+        <div class="column">
+            <a href="#" class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                </div>
+                <img src='./shared/images/proxyclick-visitor-management-system-eHoCOI9mbNc-unsplash.png' class="venue-cover">
+                <div class="venue-background"></div>
+            </a>
+            <a href="#" class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                </div>
+                <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                <div class="venue-background"></div>
+            </a>
+            <a href="#" class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                
+                </div>
+                <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                <div class="venue-background"></div>
+            </a>
+        </div>
+        <div class="column inner-column">
+            <a href="#" class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                </div>
+                <img src='./shared/images/Rectangle277.png' class="venue-cover">
+                <div class="venue-background"></div>
+            </a>
+            <a href="#" class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                </div>
+                <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                <div class="venue-background"></div>
+            </a>
+            <a href="#" class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                </div>
+                <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                <div class="venue-background"></div>
+            </a>
+        </div>
+        <div class="column">
+            <a href="#" class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                </div>
+                <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                <div class="venue-background"></div>
+            </a>
+            <a href="#" class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                
+                </div>
+                <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                <div class="venue-background"></div>
+            </a>
+            <a href="#" class="venue">
+                <div class="venue-info">
+                    <p class="venue-name">Brass Bear Brewin...</p>
+                    <p class="venue-location">LA • Glendale</p>
+                </div>
+                <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                <div class="venue-background"></div>
+            </a>
+        </div>
+    </div>
+</main>
 
 </body>
 </html>
