@@ -6,6 +6,7 @@
           content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <link rel='preload' href='./styles/styles.css' as='style'>
+    <script src='./scripts/scripts.js'></script>
     <link rel='preconnect' href='https://fonts.googleapis.com'>
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap'>
@@ -21,9 +22,9 @@
             <img class="mustard-logo" src="./shared/icons/Frame10813.png">
             <img class="profile-ava" src="./shared/images/Rectangle277.png">
         </div>
-        <div class='see-contact-info'>
+        <a href="#" class='see-contact-info' onclick="setDisplay('popup-contact')">
             See contact info
-        </div>
+        </a>
     </div>
     <div class="name-about-social">
         <div class="name-about-follow">
@@ -33,10 +34,10 @@
                 <p class="description">Food bloger. Searching new cool places for you. Pizza lover.</p>
             </div>
             <div class="follow-buttons">
-                <div class="follow">Follow</div>
-                <div class="share">
+                <a href="#" class="follow" onclick="setDisplay('popup-mustard')">Follow</a>
+                <a href="#" class="share" onclick="setDisplay('popup-share')">
                     <img src="./shared/icons/Group.png" class="share-icon">
-                </div>
+                </a>
             </div>
         </div>
         <div class="social">
@@ -181,6 +182,44 @@
         </div>
     </div>
 </main>
+
+<div class="popup" style="display: none;" id="popup-contact">
+    <div class="popup-beak">
+        <img src="./shared/icons/Vector66.png" width="24" height="24">
+    </div>
+    <div class="popup-body">
+        <p>Use contact information for collaboration with foodies</p>
+        <div class="popup-email popup-elem">
+            <img src="./shared/icons/envelope.png">
+            <p class="popup-elem-text">johndoe@gmail.com</p>
+        </div>
+        <div class="popup-phone popup-elem">
+            <img src="./shared/icons/phone.png">
+            <p class="popup-elem-text">+1 298 987 872</p>
+        </div>
+    </div>
+</div>
+
+<div class="popup" style="display: none;" id="popup-share">
+    <div class="popup-beak">
+        <img src="./shared/icons/Vector66.png" width="15" height="11">
+    </div>
+    <div class="popup-body">
+        <a href="#">Copy link</a>
+    </div>
+</div>
+
+
+<div class="popup" style="display: none;" id="popup-mustard">
+    <div class="background" onclick="setDisplayWithVal('none','popup-mustard')"></div>
+    <div class="popup-mustard">
+        <img src="./shared/icons/Group578.png" class="popup-close" onclick="setDisplayWithVal('none','popup-mustard')">
+        <img src="./shared/icons/Downloadapp.png" class="popup-mustard-logo">
+        <p class="popup-mustard-description">Your next bite is few taps away with Mustard app.</p>
+        <a href="#" class="popup-mustard-app-store"><img src="./shared/icons/image59.png" width="218px" height="72px"></a>
+        <img src="./shared/images/Popupdownload1.png" width="100%">
+    </div>
+</div>
 
 </body>
 </html>
