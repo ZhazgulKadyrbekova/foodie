@@ -5,7 +5,6 @@
     <meta name='viewport'
           content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <link rel='preload' href='./styles/styles.css' as='style'>
     <script src='./scripts/scripts.js'></script>
     <link rel='preconnect' href='https://fonts.googleapis.com'>
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
@@ -16,199 +15,641 @@
 </head>
 <body>
 
-<header>
-    <div class="ava-contact">
-        <div class="ava">
-            <img class="mustard-logo" src="./shared/icons/Frame10813.png">
-            <img class="profile-ava" src="./shared/images/Rectangle277.png">
-        </div>
-        <a href="#" class='see-contact-info' onclick="setDisplay('popup-contact')">
-            See contact info
-        </a>
-    </div>
-    <div class="name-about-social">
-        <div class="name-about-follow">
-            <div class="name-about">
-                <p class="name">@JohnDoe</p>
-                <p class="location">Los Angeles, US</p>
-                <p class="description">Food bloger. Searching new cool places for you. Pizza lover.</p>
+<div class="body">
+
+    <header>
+        <div class="ava-contact">
+            <div class="ava">
+                <img class="mustard-logo" src="./shared/icons/Frame10813.png">
+                <img class="profile-ava" src="./shared/images/Rectangle277.png">
             </div>
-            <div class="follow-buttons">
-                <a href="#" class="follow" onclick="setDisplay('popup-mustard')">Follow</a>
-                <a href="#" class="share" onclick="setDisplay('popup-share')">
-                    <img src="./shared/icons/Group.png" class="share-icon">
+            <a href="#" class='see-contact-info' onclick="setDisplay('popup-contact')">
+                See contact info
+            </a>
+        </div>
+        <div class="name-about-social">
+            <div class="name-about-follow">
+                <div class="name-about">
+                    <p class="name">@JohnDoe</p>
+                    <p class="location">Los Angeles, US</p>
+                    <p class="description">Food bloger. Searching new cool places for you. Pizza lover.</p>
+                </div>
+                <div class="follow-buttons">
+                    <a href="#" class="follow" onclick="setDisplay('popup-mustard')">Follow</a>
+                    <a href="#" class="share" onclick="setDisplay('popup-share')">
+                        <img src="./shared/icons/Group.png" class="share-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="social">
+                <a href="#" class='social-info'>
+                    <img src='./shared/icons/icon-insta.png' width='28' height='28' alt='insta-icon'/>
+                    <p style="margin-left: 4px;">93.4K</p>
+                </a>
+                <a href="#" class='social-info'>
+                    <img src='./shared/icons/icon-tiktok.png' width='28' height='28' alt='tiktok-icon'/>
+                    <p style="margin-left: 4px;">1.5K</p>
+                </a>
+                <a href="#" class='social-info'>
+                    <img src='./shared/icons/icon-elite.png' width='28' height='28' alt='elite-icon'/>
+                    <p style="margin-left: 4px;">Elite</p>
+                </a>
+                <a href="#" class='social-info'>
+                    <img src='./shared/icons/facebook.png' width='28' height='28' alt='facebook-icon'/>
+                    <p style="margin-left: 4px;">1.5M</p>
+                </a>
+                <a href="#" class='social-info'>
+                    <img src='./shared/icons/youtube.png' width='28' height='28' alt='youtube-icon'/>
+                    <p style="margin-left: 4px;">1.5M</p>
                 </a>
             </div>
         </div>
-        <div class="social">
-            <a href="#" class='social-info'>
-                <img src='./shared/icons/icon-insta.png' width='28' height='28' alt='insta-icon'/>
-                <p style="margin-left: 4px;">93.4K</p>
-            </a>
-            <a href="#" class='social-info'>
-                <img src='./shared/icons/icon-tiktok.png' width='28' height='28' alt='tiktok-icon'/>
-                <p style="margin-left: 4px;">1.5K</p>
-            </a>
-            <a href="#" class='social-info'>
-                <img src='./shared/icons/icon-elite.png' width='28' height='28' alt='elite-icon'/>
-                <p style="margin-left: 4px;">Elite</p>
-            </a>
-            <a href="#" class='social-info'>
-                <img src='./shared/icons/facebook.png' width='28' height='28' alt='facebook-icon'/>
-                <p style="margin-left: 4px;">1.5M</p>
-            </a>
-            <a href="#" class='social-info'>
-                <img src='./shared/icons/youtube.png' width='28' height='28' alt='youtube-icon'/>
-                <p style="margin-left: 4px;">1.5M</p>
-            </a>
-        </div>
-    </div>
-</header>
+    </header>
 
-<main>
-    <div class='left-column'>
-        <div class="popular-recent">
-            <label for="Popular">
-                <input type="radio" id="Popular" name="menu" checked="">
-                <div class="custom-radio"></div>
-                <div class="selected type-text">
-                    Popular
-                </div>
-            </label>
-            <label for="Recent">
-                <input type="radio" id="Recent" name="menu">
-                <div class="custom-radio"></div>
-                <div class="type-text">
-                    Recent
-                </div>
-            </label>
+    <main>
+        <div class='left-column'>
+            <div class="categories">
+                <p class="current-category">All Categories</p>
+                <a href="#right-column" class="category" category="pizza">Pizza</a>
+                <a href="#right-column" class="category" category="pie">Piece of the pie</a>
+                <a href="#right-column" class="category" category="appetizers">Appetizers</a>
+                <a href="#right-column" class="category" category="salads">Salads</a>
+                <a href="#right-column" class="category" category="vegetables">Vegetables</a>
+                <a href="#right-column" class="category" category="pasta">Pasta</a>
+                <a href="#right-column" class="category" category="boards">Boards</a>
+                <a href="#right-column" class="category" category="entrees">Entrees</a>
+                <a href="#right-column" class="category" category="dessert">Dessert</a>
+                <a href="#right-column" class="category" category="gelato">Gelato</a>
+                <a href="#right-column" class="category" category="teas">Organic teas</a>
+            </div>
         </div>
-        <div class="categories">
-            <p class="current-category category">All Categories</p>
-            <p class="category">Pizza</p>
-            <p class="category">Piece of the pie</p>
-            <p class="category">Appetizers</p>
-            <p class="category">Salads</p>
-            <p class="category">Vegetables</p>
-            <p class="category">Pasta</p>
-            <p class="category">Vegetables</p>
-            <p class="category">Boards</p>
-            <p class="category">Entrees</p>
-            <p class="category">Dessert</p>
-            <p class="category">Gelato</p>
-            <p class="category">Organic teas</p>
+        <div id='right-column'>
+            <div class="sort">
+                <div class="selected" onclick="setDisplayFlex('popup-dropdown')">
+                    <a href="#" style="color: #1D2023;">Most Popular</a>
+                    <img src="./shared/icons/Group22.png">
+                </div>
+                <div id="popup-dropdown" style="display: none;">
+                    <a href="#" id="most-popular" class="dropdown-elem">Most Popular</a>
+                    <a href="#" id="recent" class="dropdown-elem">Recent</a>
+                </div>
+            </div>
+            <div class="feed" id="pizza">
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/proxyclick-visitor-management-system-eHoCOI9mbNc-unsplash.png' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column inner-column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/Rectangle277.png' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="feed" id="pie" style="display: none;">
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column inner-column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/Rectangle277.png' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="feed" id="appetizers" style="display: none;">
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/proxyclick-visitor-management-system-eHoCOI9mbNc-unsplash.png' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column inner-column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/Rectangle277.png' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="feed" id="salads" style="display: none;">
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/proxyclick-visitor-management-system-eHoCOI9mbNc-unsplash.png' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column inner-column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/Rectangle277.png' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="feed" id="vegetables" style="display: none;">
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/proxyclick-visitor-management-system-eHoCOI9mbNc-unsplash.png' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column inner-column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/Rectangle277.png' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="feed" id="pasta" style="display: none;">
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/proxyclick-visitor-management-system-eHoCOI9mbNc-unsplash.png' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column inner-column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/Rectangle277.png' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="feed" id="boards" style="display: none;">
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/proxyclick-visitor-management-system-eHoCOI9mbNc-unsplash.png' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column inner-column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        
+                        </div>
+                        <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                    <a href="#" class="venue">
+                        <div class="venue-info">
+                            <p class="venue-name">Brass Bear Brewin...</p>
+                            <p class="venue-location">LA • Glendale</p>
+                        </div>
+                        <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
+                        <div class="venue-background"></div>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class='right-column'>
-        <div class="column">
-            <a href="#" class="venue">
-                <div class="venue-info">
-                    <p class="venue-name">Brass Bear Brewin...</p>
-                    <p class="venue-location">LA • Glendale</p>
-                </div>
-                <img src='./shared/images/proxyclick-visitor-management-system-eHoCOI9mbNc-unsplash.png' class="venue-cover">
-                <div class="venue-background"></div>
-            </a>
-            <a href="#" class="venue">
-                <div class="venue-info">
-                    <p class="venue-name">Brass Bear Brewin...</p>
-                    <p class="venue-location">LA • Glendale</p>
-                </div>
-                <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
-                <div class="venue-background"></div>
-            </a>
-            <a href="#" class="venue">
-                <div class="venue-info">
-                    <p class="venue-name">Brass Bear Brewin...</p>
-                    <p class="venue-location">LA • Glendale</p>
-                
-                </div>
-                <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
-                <div class="venue-background"></div>
-            </a>
-        </div>
-        <div class="column inner-column">
-            <a href="#" class="venue">
-                <div class="venue-info">
-                    <p class="venue-name">Brass Bear Brewin...</p>
-                    <p class="venue-location">LA • Glendale</p>
-                </div>
-                <img src='./shared/images/Rectangle277.png' class="venue-cover">
-                <div class="venue-background"></div>
-            </a>
-            <a href="#" class="venue">
-                <div class="venue-info">
-                    <p class="venue-name">Brass Bear Brewin...</p>
-                    <p class="venue-location">LA • Glendale</p>
-                </div>
-                <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
-                <div class="venue-background"></div>
-            </a>
-            <a href="#" class="venue">
-                <div class="venue-info">
-                    <p class="venue-name">Brass Bear Brewin...</p>
-                    <p class="venue-location">LA • Glendale</p>
-                </div>
-                <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
-                <div class="venue-background"></div>
-            </a>
-        </div>
-        <div class="column">
-            <a href="#" class="venue">
-                <div class="venue-info">
-                    <p class="venue-name">Brass Bear Brewin...</p>
-                    <p class="venue-location">LA • Glendale</p>
-                </div>
-                <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
-                <div class="venue-background"></div>
-            </a>
-            <a href="#" class="venue">
-                <div class="venue-info">
-                    <p class="venue-name">Brass Bear Brewin...</p>
-                    <p class="venue-location">LA • Glendale</p>
-                
-                </div>
-                <img src='./shared/images/junior-unsplash.jpg' class="venue-cover">
-                <div class="venue-background"></div>
-            </a>
-            <a href="#" class="venue">
-                <div class="venue-info">
-                    <p class="venue-name">Brass Bear Brewin...</p>
-                    <p class="venue-location">LA • Glendale</p>
-                </div>
-                <img src='./shared/images/junior-reis-cHW9kF0WTfg-unsplash.jpg' class="venue-cover">
-                <div class="venue-background"></div>
-            </a>
-        </div>
-    </div>
-</main>
+    </main>
 
-<div class="popup" style="display: none;" id="popup-contact">
-    <div class="popup-beak">
-        <img src="./shared/icons/Vector66.png" width="24" height="24">
-    </div>
-    <div class="popup-body">
-        <p>Use contact information for collaboration with foodies</p>
-        <div class="popup-email popup-elem">
-            <img src="./shared/icons/envelope.png">
-            <p class="popup-elem-text">johndoe@gmail.com</p>
+    <div class="popup" style="display: none;" id="popup-contact">
+        <div class="popup-beak">
+            <img src="./shared/icons/Vector66.png" width="24" height="24">
         </div>
-        <div class="popup-phone popup-elem">
-            <img src="./shared/icons/phone.png">
-            <p class="popup-elem-text">+1 298 987 872</p>
+        <div class="popup-body">
+            <p>Use contact information for collaboration with foodies</p>
+            <div class="popup-email popup-elem">
+                <img src="./shared/icons/envelope.png">
+                <p class="popup-elem-text">johndoe@gmail.com</p>
+            </div>
+            <div class="popup-phone popup-elem">
+                <img src="./shared/icons/phone.png">
+                <p class="popup-elem-text">+1 298 987 872</p>
+            </div>
         </div>
     </div>
+
+    <div class="popup" style="display: none;" id="popup-share">
+        <div class="popup-beak">
+            <img src="./shared/icons/Vector66.png" width="15" height="11">
+        </div>
+        <div class="popup-body">
+            <a href="#">Copy link</a>
+        </div>
+    </div>
+
 </div>
-
-<div class="popup" style="display: none;" id="popup-share">
-    <div class="popup-beak">
-        <img src="./shared/icons/Vector66.png" width="15" height="11">
-    </div>
-    <div class="popup-body">
-        <a href="#">Copy link</a>
-    </div>
-</div>
-
 
 <div class="popup" style="display: none;" id="popup-mustard">
     <div class="background" onclick="setDisplayWithVal('none','popup-mustard')"></div>
@@ -220,6 +661,10 @@
         <img src="./shared/images/Popupdownload1.png" width="100%">
     </div>
 </div>
+
+<script>
+    categoriesSmoothScroll();
+</script>
 
 </body>
 </html>

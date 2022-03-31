@@ -5,11 +5,53 @@ function setDisplay(displayState, id) {
     elem.style.display = displayState;
 }
 
+function setFeedDisplay(id) {
+  const feeds = document.getElementsByClassName('feed')
+  for (let i = 0; i < feeds.length; i++) {
+    let current = feeds[i]
+    if (current.id === id) {
+      current.style.display = 'flex'
+    } else {
+      current.style.display = 'none'
+    }
+  }
+}
+
 function scrollFunction() {
   if (document.documentElement.scrollTop > 580) {
     document.getElementById("popup-profile").style.bottom = "0";
   } else {
     document.getElementById("popup-profile").style.bottom = "-100px";
+  }
+}
+
+function categoriesSmoothScroll() {
+  const categories = document.getElementsByClassName('category')
+  for (let i = 0; i < categories.length; i++) {
+    let link = categories[i]
+    let id = link.getAttribute('category')
+
+    link.addEventListener('click', function(e) {
+      e.preventDefault()
+
+      document.querySelector('.current-category')?.classList.remove('current-category')
+      e.target.classList.add('current-category')
+      
+      setFeedDisplay(id)
+
+      const scrollTarget = document.getElementById(id)
+
+      if (!scrollTarget) return
+
+      const elementPosition = scrollTarget.getBoundingClientRect().top
+      const offsetPosition = elementPosition - 70
+
+      window.scrollBy({
+          top: offsetPosition,
+          behavior: 'smooth'
+      })
+
+    })
   }
 }
 

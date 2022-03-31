@@ -20,14 +20,16 @@ body {
     scrollbar-gutter: stable both-edges;
     background: #F9F4E9;
 }
+.body {
+    max-width: 1024px;
+    margin: auto;
+}
 
 header {
     width: calc(100% - 62px);
     display: flex;
-    padding: 0 31px;
+    margin: 0 31px;
     border-bottom: 1px solid #F2ECDE;
-    max-width: 1024px;
-    margin: auto;
 }
 
 .ava-contact {
@@ -36,7 +38,7 @@ header {
 }
 
 .ava {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .profile-ava {
@@ -64,6 +66,7 @@ header {
     display: flex;
     letter-spacing: 0.2px;
     color: #EB6C24;
+    margin-bottom: 16px;
 }
 
 .name-about-social {
@@ -148,7 +151,7 @@ header {
 
 .social {
     display: flex;
-    margin: 40px 0;
+    margin: 24px 0;
     width: 100%;
 }
 .social-info {
@@ -175,9 +178,7 @@ header {
 main {
     width: calc(100% - 60px);
     display: flex;
-    padding: 40px 29px 0 33px;
-    margin: auto;
-    max-width: 1024px;
+    margin: 24px 29px 0 33px;
 }
 
 .left-column {
@@ -216,29 +217,76 @@ main {
     color: #000000;
 }
 
-.categories {
-    margin-top: 32px;
+.popular-recent {
+    margin-bottom: 32px;
 }
 
-.category {
+.categories {
+    display: flex;
+    flex-direction: column;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: rgba(0, 0, 0, 0.4);
-    margin-bottom: 16px;
 }
-.category.current-category {
+.categories .current-category {
     font-weight: 700;
     color: #000000;
 }
+.categories a, .categories p {
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+}
 
-.right-column {
-    display: flex;
+#right-column {
+    margin-top: 4px;
     width: calc(100% - 194px);
 }
 
+.sort {
+    margin-bottom: 16px;
+}
+
+.selected {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #1D2023;
+}
+#popup-dropdown {
+    position: absolute;
+    width: 180px;
+    height: 112px;
+    z-index: 20;
+    background: #FFFFFF;
+    box-shadow: 2px 5px 15px rgb(9 18 70 / 10%);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.dropdown-elem {
+    padding: 8px 24px;
+    color: #1D2023;
+}
+a.dropdown-elem:hover{
+    background: rgba(249, 244, 233, 0.5);
+}
+
+.feed {
+    display: flex;
+}
 .column {
     width: calc((100% - 40px) / 3);
     display: flex;
