@@ -402,3 +402,53 @@ a {
     visibility: hidden;
     width: calc(100% - 185px);
 }
+
+main .empty {
+    margin: 20px auto;
+    width: 284px;
+    height: 332px;
+}
+
+.empty .empty-img {
+    padding: 0 40px;
+    width: 100%;
+}
+
+.empty .empty-foodie {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1D2023;
+
+    margin: 12px 0;
+}
+
+.empty .empty-follow {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1D2023;
+}
+
+.empty .empty-follow-foodie {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #EB6C24;
+    margin: 10px auto;
+}

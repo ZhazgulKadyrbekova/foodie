@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link rel='preload' href='./styles/styles-mob.css' as='style'>
+    <script src='./scripts/scripts-mob.js'></script>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap'>
+    <link rel='stylesheet' href='./styles/styles-mob.css'>
+    <link rel='icon' href='./shared/favicon.png' type='image/png'>
+    <title>Menu</title>
+</head>
+<body>
+
+<header>
+    <div class='header-profile'>
+        <img src="./shared/icons/Frame10813.png" class="mustard-logo">
+        <div class="profile">
+            <div class="profile-ava">
+            </div>
+            <div class="profile-name">
+                <p class="profile-nick">@JohnDoe</p>
+                <p class="profile-location">Los Angeles, US</p>
+            </div>
+            <div class="profile-follow" onclick="setDisplay('block','popup-mustard')">Follow</div>
+            <div class="profile-share">
+                <img src="./shared/icons/Frame11161.png">
+            </div>
+        </div>
+    </div>
+    <div class='About-block'>
+        <p class="About-description">Food bloger. Searching new cool places for you. Pizza lover.</p> 
+        <div class='Contact-body'>
+            <a href="#" class='Contact-info'>
+                <img src='./shared/icons/icon-insta.png' width='28' height='28' alt='insta-icon'/>
+                <p>93.4K</p>
+            </a>
+            <a href="#" class='Contact-info'>
+                <img src='./shared/icons/icon-tiktok.png' width='28' height='28' alt='tiktok-icon'/>
+                <p>1.5K</p>
+            </a>
+            <a href="#" class='Contact-info'>
+                <img src='./shared/icons/icon-elite.png' width='28' height='28' alt='elite-icon'/>
+                <p>Elite</p>
+            </a>
+            <a href="#" class='Contact-info'>
+                <img src='./shared/icons/facebook.png' width='28' height='28' alt='facebook-icon'/>
+                <p>1.5M</p>
+            </a>
+            <a href="#" class='Contact-info'>
+                <img src='./shared/icons/youtube.png' width='28' height='28' alt='youtube-icon'/>
+                <p>1.5M</p>
+            </a>
+        </div>
+        <div class='See-contact-info' onclick="setDisplay('block','popup-contact')">
+            See contact info
+        </div>
+    </div>
+</header>
+    
+<main>
+    <div class="empty">
+        <div class="empty-img">
+            <img src="./shared/images/video1.png" width="204" height="204">
+        </div>
+        
+        <p class="empty-foodie">Foodie is working on content</p>
+        <p class="empty-follow">Follow @JohnDoe to be in touch when he upload his first content here</p>
+    </div>
+</main>
+
+<div id="popup-profile">
+    <div class="profile-ava">
+    </div>
+    <div class="popup-profile-name">
+    </div>
+    <div class="profile-follow" onclick="setDisplay('block','popup-mustard')">Follow</div>
+    <div class="profile-share">
+        <img src="./shared/icons/Frame11161.png">
+    </div>
+</div>
+
+<div class="popup" style="display: none;" id="popup-contact">
+    <div class="background" onclick="setDisplay('none','popup-contact')"></div>
+    <div class="popup-contact">
+        <div class="popup-head">
+            <p>Contact info</p>
+            <img src="./shared/icons/Group578.png" class="popup-close" onclick="setDisplay('none','popup-contact')">
+        </div>
+        <div class="popup-body">
+            <p>Use contact information for collaboration with foodies</p>
+            <a class="popup-email popup-elem" href="mailto:contact@mustard.love">
+                <img src="./shared/icons/envelope.png">
+                <p class="popup-elem-text">johndoe@gmail.com</p>
+            </a>
+            <a class="popup-phone popup-elem" href="tel:1298987872">
+                <img src="./shared/icons/phone.png">
+                <p class="popup-elem-text">+1 298 987 872</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="popup" style="display: none;" id="popup-mustard">
+    <div class="background" onclick="setDisplay('none','popup-mustard')"></div>
+    <div class="popup-mustard">
+        <img src="./shared/icons/Group578.png" class="popup-close" onclick="setDisplay('none','popup-mustard')">
+        <img src="./shared/icons/Downloadapp.png" class="popup-mustard-logo">
+        <p>Your next bite is few taps away with Mustard app.</p>
+        <a href="#" class="popup-mustard-app-store"><img src="./shared/icons/image59.png"></a>
+        <img src="./shared/images/Illustration.png" width="100%">
+    </div>
+</div>
+
+<script>
+    categoriesSmoothScroll();
+</script>
+</body>
+</html>

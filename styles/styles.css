@@ -473,3 +473,52 @@ a.dropdown-elem:hover{
 .popup-mustard-app-store {
     margin: 48px auto 30px;
 }
+
+#right-column .empty {
+    margin: 12px auto;
+    width: 284px;
+    height: 376px;
+}
+
+.empty .empty-img {
+    padding: 0 40px;
+    width: 100%;
+}
+
+.empty .empty-foodie {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1D2023;
+    margin: 12px 0;
+}
+
+.empty .empty-follow {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #77797B;
+}
+
+.empty .empty-follow-foodie {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #EB6C24;
+    margin: 10px auto;
+}
