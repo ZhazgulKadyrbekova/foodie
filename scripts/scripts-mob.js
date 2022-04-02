@@ -55,6 +55,32 @@ function categoriesSmoothScroll() {
   }
 }
 
+function shareButton() {
+  const shareData = {
+    title: 'Mustard',
+    text: 'Learn web development on MDN!',
+    url: 'https://developer.mozilla.org'
+  }
+
+  const buttons = document.getElementsByClassName('profile-share');
+  for (let i = 0; i < buttons.length; i++) {
+    const btn = buttons[i]
+    btn.addEventListener('click', async () => {
+      try {
+        await navigator.share(shareData)
+        console.log('Successful share')
+      } catch(err) {
+        console.log('Error: ' + err)
+      }
+    });
+  }
+}
+
 window.onscroll = function() {
     scrollFunction()
 };
+
+function setEventListeners() {
+  categoriesSmoothScroll();
+  shareButton();
+}

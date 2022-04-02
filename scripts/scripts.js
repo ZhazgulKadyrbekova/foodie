@@ -64,3 +64,8 @@ function categoriesSmoothScroll() {
     })
   }
 }
+
+function copyLinkToClipboard() {
+  var text = document.getElementById('copy-link').getAttribute('data-copy')
+  navigator.clipboard.writeText(text);
+}
